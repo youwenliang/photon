@@ -363,3 +363,70 @@ div[data-tabs] input[type="radio"]:checked + label + div[data-tab] {
   display: block;
 }
 
+/* Welcome Page */
+
+/* Header */
+
+#welcome header {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+  }
+
+  p:last-of-type {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Section typography */
+
+#welcome section {
+  h2 {
+    color: #363a58;
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 1.21;
+  }
+
+  p {
+    color: #38383d;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 1rem;
+  }
+
+  button {
+    background-color: rgba(12, 12, 13, .1);
+    border: none;
+    border-radius: 2px;
+    color: black;
+    cursor: pointer;
+    font-family: "Fira Sans";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    min-width: 132px;
+    padding: 16px;
+  }
+}
+
+/* Gradient Border */
+.gradient-border {
+  background-position: 0 400px, 100% 400px;
+  background-repeat: no-repeat;
+  background-size: 18px 100%;
+
+  @media screen and (max-width: 60em) {
+    background-image: none !important;
+  }
+}

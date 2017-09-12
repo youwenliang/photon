@@ -46,7 +46,6 @@ syncReduxAndRouter(history, store);
 function onUpdate() {
   var {pages, text} = store.getState().data;
   var {path} = store.getState().routing;
-
   if( text ) {
     // We're already loading the content, so skip this update…
     return;
